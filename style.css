@@ -632,7 +632,6 @@ h2{
   color: #fff;
   padding: 60px 20px;
   text-align: center;
-  max-width: 400px  ;
 }
 
 .contatos h2 {
@@ -661,7 +660,6 @@ section p a:hover{
 
 .redes-contato {
   margin-top: 30px;
-  max-width: 400px;
   display: flex;
   justify-content: center;
   gap: 20px;
