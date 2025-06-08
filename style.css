@@ -12,6 +12,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #f7f7f7;
+  overflow-x: hidden;
 }
 
 header{
@@ -253,13 +254,15 @@ h1{
   }
 }
 
+
+
 /*home*/
 .home{
+  width: 490px;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  padding: 20px;
   background: linear-gradient(140deg, #111, #222);
   color: #fff;
   text-align: center;
@@ -267,13 +270,13 @@ h1{
 }
 
 .container-home{
-  max-width: 380px;
+  width: 490px;
+  margin: 0 auto;
+  padding: 0 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   flex: 1;
-  margin: 0 auto;
-  width: 100%;
   gap: 30px;
 }
 
@@ -356,16 +359,29 @@ h2{
   color: #00bfff;
 }
 
+@media screen and (min-width: 768px){
+  .home{
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1340px){
+  .home{
+    width: 1355px;
+  }
+}
+
 /*sobre*/
 .sobre{
   background-color: #fff;
   color: #111;
   padding: 80px 20px;
   text-align: center;
+  width: 490px;
 }
 
 .container-sobre{
-  max-width: 380px;
+  width: 490px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -402,11 +418,12 @@ h2{
 @media screen and (min-width: 768px){
   .sobre{
     scroll-margin-top: 40px;
+    width: 768px;
   }
 
 
   .container-sobre{
-    max-width: 700px;
+    width: 700px;
   }
 
   .sobre h2{
@@ -420,24 +437,26 @@ h2{
 
 @media screen and (min-width: 1340px){
   .sobre{
+    width: 1355px;
     scroll-margin-top: 40px;
   }
 
   .container-sobre{
-    max-width: 1300px;
+    max-width: 1200px;
   }
 
   .sobre h2{
-    font-size: 33px;
+    font-size: 30px;
   }
 
   .sobre p{
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
 /*Tecnologias*/
 .tecnologias {
+  width: 490px;
   background-color: #111;
   color: white;
   padding: 80px 20px;
@@ -497,13 +516,25 @@ h2{
 }
 
 @media screen and (min-width: 768px){
-  .container-tecnologias {
-    max-width: 600px;
+  .tecnologias{
+    width: 768px;
+  }
 
+  .container-tecnologias {
+    width: 600px;
+
+  }
+
+  .tecnologias h2{
+    font-size: 32px;
   }
 }
 
 @media screen and (min-width: 1340px){
+  .tecnologias{
+    width: 1355px;
+  }
+
   .container-tecnologias{
     max-width: 1300px;
   }
@@ -511,6 +542,7 @@ h2{
 
 /*projetos*/
 .projetos{
+  width: 490px;
   background-color: #f7f7f7;
   padding: 20px 40px;
   color: #111;
@@ -534,6 +566,7 @@ h2{
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 30px;
+  padding: 30px;
 }
 
 .card-pj{
@@ -586,6 +619,10 @@ h2{
 }
 
 @media screen and (min-width: 768px){
+  .projetos{
+    width: 768px;
+  }
+
   .container-pj{
     max-width: 700px;
   }
@@ -616,6 +653,10 @@ h2{
 }
 
 @media screen and (min-width: 1340px){
+  .projetos{
+    width: 1355px;
+  }
+
   .container-pj{
     max-width: 1350px;
   }
@@ -629,8 +670,9 @@ h2{
 /*contatos*/
 .contatos {
   background-color: #111;
+  width: 490px;
   color: #fff;
-  padding: 60px 20px;
+  padding: 40px 20px;
   text-align: center;
 }
 
@@ -671,11 +713,23 @@ section p a:hover{
   text-decoration: none;
   border: 2px solid #00bfff;
   border-radius: 6px;
-  padding: 10px 20px;
+  padding: 10px 15px;
   transition: background-color 0.3s, color 0.3s;
 }
 
 .redes-contato a:hover {
   background-color: #00bfff;
   color: #000;
+}
+
+@media screen and (min-width: 768px){
+  .contatos{
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1340px){
+  .contatos{
+    width: 1355px;
+  }
 }
