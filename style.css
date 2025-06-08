@@ -707,19 +707,55 @@ section p a:hover{
   gap: 20px;
 }
 
-.redes-contato a {
+.btn {
   color: #00bfff;
+  border: 2px solid transparent;
+  background-color: transparent;
+  border-radius: 6px;
   font-weight: bold;
   text-decoration: none;
-  border: 2px solid #00bfff;
-  border-radius: 6px;
   padding: 10px 15px;
   transition: background-color 0.3s, color 0.3s;
 }
 
-.redes-contato a:hover {
-  background-color: #00bfff;
-  color: #000;
+.btn-github{
+  border-color: #333;
+  color: #333;
+}
+
+.btn-github:hover{
+  background-color: #333;
+  color: white;
+}
+
+.btn-linkedin{
+  border-color: #0077B5;
+  color: #0077B5;
+}
+
+.btn-linkedin:hover{
+  background-color: #0077B5;
+  color: white;
+}
+
+.btn-instagram{
+  border-color: purple;
+  color: purple;
+}
+
+.btn-instagram:hover{
+  background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+  color: white;
+}
+
+.btn-whatsapp{
+  border-color: #25D366;
+  color: #25D366;
+}
+
+.btn-whatsapp:hover{
+  background-color: #25D366;
+  color: white;
 }
 
 @media screen and (min-width: 768px){
