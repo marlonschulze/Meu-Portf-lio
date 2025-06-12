@@ -3,7 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description">
   <link rel="stylesheet" href="style.css">
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+ 
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +22,7 @@
   <title>Marlon Schulze | Desenvolvedor Front-End</title>
 </head>
 <body>
-  <header>
+  <header data-aos="fade-down">
     <h1 id="maquinaEscrever"></h1>
     <div class="menu-container">
     <div class="hamburger" id="hamburger">
@@ -38,7 +43,8 @@
   </header>
   
   <!--home-->
-  <section id="home" class="home">
+  <section id="home" class="home" data-aos="fade-down"
+     data-aos-duration="1000">
     <div class="container-home">
       <h2>Oi, eu sou o Marlon</h2>
       <p class="descricao">Estudante de Desenvolvimento Web, em busca da minha primeira oportunidade como dev</p>
@@ -54,7 +60,7 @@
   </section>
 
   <!--sobre-->
-  <section class="sobre" id="sobre">
+  <section class="sobre" id="sobre" data-aos="zoom-out-up" data-aos-duration="1300">
     <div class="container-sobre">
       <h2>Sobre Mim</h2>
       <p>Olá! Sou Marlon Kauã Schulze, estudante e entusiasta do desenvolvimento front-end. Estou em formação na área de tecnologia e tenho me dedicado a aprender e praticar habilidades com HTML, CSS e JavaScript.
@@ -67,27 +73,28 @@
   </section>
 
   <!--tecnologias-->
-  <section id="tecnologias" class="tecnologias">
+  <section id="tecnologias" class="tecnologias" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration="1600" data-aos-delay="0">
     <div class="container-tecnologias">
       <h2>Tecnologias</h2>
     <div class="grid-tecnologias">
-      <div class="tecnologia">
+      <div class="tecnologia" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
         <p>HTML5</p>
       </div>
-      <div class="tecnologia">
+      <div class="tecnologia" data-aos="zoom-in" data-aos-duration="1300" data-aos-delay="200">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
         <p>CSS3</p>
       </div>
-      <div class="tecnologia">
+      <div class="tecnologia" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="300">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
         <p>JavaScript</p>
       </div>
-      <div class="tecnologia">
+      <div class="tecnologia" data-aos="zoom-in" data-aos-duration="1800" data-aos-delay="400">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
         <p>Git</p>
         </div>
-        <div class="tecnologia">
+        <div class="tecnologia" data-aos="zoom-in" data-aos-duration="2100" data-aos-delay="500">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" alt="GitHub">
         <p>GitHub</p>
       </div>
@@ -97,23 +104,23 @@
   </section>
 
   <!--projetos-->
-  <section class="projetos" id="projetos">
-    <div class="container-pj">
+  <section class="projetos" id="projetos" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="linear">
+    <div class="container-pj" >
       <h2>Meus Projetos</h2>
-      <div class="grid-pj">
+      <div class="grid-pj" data-aos="flip-left" data-aos-duration="1500">
         <div class="card-pj">
           <h3>FloraFácil🌿</h3>
           <p>Site institucional para a FloraFácil, empresa fictícia de jardinagem, paisagismo e manutenção de jardins. O projeto apresenta os serviços oferecidos, etapas do trabalho e facilita o contato com clientes.</p>
           <a href="https://marlonschulze.github.io/FloraFacil/" target="_blank" class="btn-pj">Ver no GitHub</a>
         </div>
 
-        <div class="card-pj">
+        <div class="card-pj" data-aos="flip-left" data-aos-duration="1500">
           <h3>Doce Pão🥖</h3>
           <p>Site fictício da padaria Doce Pão, desenvolvido com fins educativos para praticar HTML, CSS e JavaScript.</p>
           <a href="https://marlonschulze.github.io/Doce-P-o/" target="_blank" class="btn-pj">Ver no GitHub</a>
         </div>
 
-        <div class="card-pj">
+        <div class="card-pj" data-aos="flip-left" data-aos-duration="1500">
           <h3>Finango💰</h3>
           <p>Finango é um sistema financeiro fictício criado para estudo de front-end, com foco em interface, usabilidade e responsividade, usando apenas HTML, CSS e JavaScript.</p>
           <a href="https://marlonschulze.github.io/finango/" target="_blank" class="btn-pj">Ver no GitHub</a>
@@ -123,7 +130,8 @@
   </section>
 
   <!--contatos-->
-  <section class="contatos" id="contatos">
+  <section class="contatos" id="contatos" data-aos="fade-left"  data-aos-easing="linear"
+     data-aos-duration="1000">
     <div>
       <h2>Contatos</h2>
       <p>Quer trocar uma idéia? Me manda uma mensagem!</p>
@@ -139,6 +147,16 @@
     </div>
     </div>
   </section>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: false,
+    mirror: true,
+  });
+  
+</script>
+
   <script src="script.js"></script>
 </body>
 </html>

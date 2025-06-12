@@ -9,7 +9,7 @@ hamburger.addEventListener('click', () => {
   navBar.classList.toggle('show');  
 });
 
-const links = document.querySelectorAll('a');
+const links = document.querySelectorAll('.navbar a');
 links.forEach(link => {
   link.addEventListener('click', () => {
     navBar.classList.remove('show');
@@ -25,7 +25,7 @@ function digitar(){
   if(i < text.length){
     document.getElementById('maquinaEscrever').textContent += text.charAt(i);
     i++;
-    setTimeout(digitar, 90);
+    setTimeout(digitar, 150);
   }
 }
 

@@ -15,6 +15,24 @@ body {
   overflow-x: hidden;
 }
 
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-scrollbar-track{
+  background-color: #111;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #0077B5;
+  border-radius: 5px  ;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #00bfff;
+}
+
+
 header{
   position: fixed;
   width: 100%;
@@ -218,7 +236,7 @@ h1{
     background-color: transparent;
     box-shadow: none;
     position: relative;
-    top: 25px;
+    top: 30px;
   }
 
   .navbar ul{
