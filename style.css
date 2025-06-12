@@ -36,6 +36,7 @@ body {
 header{
   position: fixed;
   width: 100%;
+  max-width: 767px;
   height: 80px;
   background: linear-gradient(270deg, #000000, #00bfff);
   background-size: 200% 400%;
@@ -169,55 +170,19 @@ h1{
   }
 
   .hamburger{
-    display: none;
+    top: 5px;
   }
 
   .navbar{
-    display: flex;
-    flex-direction: row;
-    background-color: transparent;
-    box-shadow: none;
-    position: relative;
-    top: 15px;
-  }
-
-  .navbar ul{
-    flex-direction: row;
-  }
-
-  
-  .navbar a {
-    position: relative;
-    top: -10px;
-    color: white;
-    font-size: 17px;
-    padding: 5px;
-    font-weight: 500;
-  }
-
-  .navbar a::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0%;
-    height: 2px;
-    background-color: white;
-    transition: width 0.3s ease;
-  }
-
-  .navbar a:hover{
-    background-color: transparent;
-  }
-
-  .navbar a:hover::after{
-    width: 100%;
+    width: 200px;
   }
 }
 
 @media screen and (min-width: 1340px) {
   header{
     height: 100px;
+    width: 100%;
+    max-width: 1450px;
   }
 
   h1{
@@ -231,12 +196,14 @@ h1{
   }
 
   .navbar{
+    width: 100%;
+    max-width: 1440px;
     display: flex;
     flex-direction: row;
     background-color: transparent;
     box-shadow: none;
     position: relative;
-    top: 30px;
+    top: 25px;
   }
 
   .navbar ul{
@@ -276,7 +243,8 @@ h1{
 
 /*home*/
 .home{
-  width: 490px;
+  width: 100%;
+  max-width: 767px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -379,23 +347,29 @@ h2{
 
 @media screen and (min-width: 768px){
   .home{
-    width: 768px;
+    width: 100%;
+  }
+
+  .container-home{
+    margin-bottom: 150px;
   }
 }
 
 @media screen and (min-width: 1340px){
   .home{
-    width: 1355px;
+    max-width: 1440px;
+    margin-top: 90px;
   }
 }
 
 /*sobre*/
 .sobre{
+
   background-color: #fff;
   color: #111;
   padding: 80px 20px;
   text-align: center;
-  width: 490px;
+  
 }
 
 .container-sobre{
@@ -436,7 +410,8 @@ h2{
 @media screen and (min-width: 768px){
   .sobre{
     scroll-margin-top: 40px;
-    width: 768px;
+    width: 100%;
+
   }
 
 
@@ -455,7 +430,7 @@ h2{
 
 @media screen and (min-width: 1340px){
   .sobre{
-    width: 1355px;
+    width: 100%;
     scroll-margin-top: 40px;
   }
 
@@ -474,7 +449,7 @@ h2{
 
 /*Tecnologias*/
 .tecnologias {
-  width: 490px;
+
   background-color: #111;
   color: white;
   padding: 80px 20px;
@@ -498,6 +473,8 @@ h2{
 }
 
 .grid-tecnologias {
+  max-width: 767px;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -550,7 +527,7 @@ h2{
 
 @media screen and (min-width: 1340px){
   .tecnologias{
-    width: 1355px;
+    width: 100%;
   }
 
   .container-tecnologias{
@@ -560,7 +537,8 @@ h2{
 
 /*projetos*/
 .projetos{
-  width: 490px;
+  width: 100%;
+  max-width: 767px;
   background-color: #f7f7f7;
   padding: 20px 40px;
   color: #111;
@@ -568,8 +546,7 @@ h2{
   scroll-margin-top: 100px;
 }
 
-.container-pj{
-  max-width: 440px;
+.container-pj{  
   margin:  0 auto;
 }
 
@@ -672,7 +649,9 @@ h2{
 
 @media screen and (min-width: 1340px){
   .projetos{
-    width: 1355px;
+    max-width: 1440px;
+    width: 100%;
+
   }
 
   .container-pj{
@@ -688,7 +667,8 @@ h2{
 /*contatos*/
 .contatos {
   background-color: #111;
-  width: 490px;
+  width: 100%;
+  max-width: 767px;
   color: #fff;
   padding: 40px 20px;
   text-align: center;
@@ -784,6 +764,7 @@ section p a:hover{
 
 @media screen and (min-width: 1340px){
   .contatos{
-    width: 1355px;
+    max-width: 1440px;
+    width: 100%;
   }
 }
