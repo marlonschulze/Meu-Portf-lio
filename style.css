@@ -36,7 +36,6 @@ body {
 header{
   position: fixed;
   width: 100%;
-  max-width: 767px;
   height: 80px;
   background: linear-gradient(270deg, #000000, #00bfff);
   background-size: 200% 400%;
