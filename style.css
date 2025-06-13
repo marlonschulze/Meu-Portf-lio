@@ -181,7 +181,6 @@ h1{
   header{
     height: 100px;
     width: 100%;
-    max-width: 1450px;
   }
 
   h1{
@@ -243,7 +242,6 @@ h1{
 /*home*/
 .home{
   width: 100%;
-  max-width: 767px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -356,14 +354,12 @@ h2{
 
 @media screen and (min-width: 1340px){
   .home{
-    max-width: 1440px;
     margin-top: 90px;
   }
 }
 
 /*sobre*/
 .sobre{
-
   background-color: #fff;
   color: #111;
   padding: 80px 20px;
@@ -410,7 +406,6 @@ h2{
   .sobre{
     scroll-margin-top: 40px;
     width: 100%;
-
   }
 
 
@@ -448,7 +443,6 @@ h2{
 
 /*Tecnologias*/
 .tecnologias {
-
   background-color: #111;
   color: white;
   padding: 80px 20px;
@@ -511,7 +505,7 @@ h2{
 
 @media screen and (min-width: 768px){
   .tecnologias{
-    width: 768px;
+    width: 100%;
   }
 
   .container-tecnologias {
@@ -614,7 +608,7 @@ h2{
 
 @media screen and (min-width: 768px){
   .projetos{
-    width: 768px;
+    width: 100%;
   }
 
   .container-pj{
@@ -667,7 +661,6 @@ h2{
 .contatos {
   background-color: #111;
   width: 100%;
-  max-width: 767px;
   color: #fff;
   padding: 40px 20px;
   text-align: center;
@@ -711,59 +704,60 @@ section p a:hover{
   border-radius: 6px;
   font-weight: bold;
   text-decoration: none;
-  padding: 10px 15px;
+  padding: 10px 10px;
   transition: background-color 0.3s, color 0.3s;
+  max-width: 100%;
+  width: fit-content;
+  box-sizing: border-box;
+  word-wrap: break-word;
 }
 
-.btn-github{
+.btn-github {
   border-color: #333;
   color: #333;
 }
-
-.btn-github:hover{
+.btn-github:hover {
   background-color: #333;
   color: white;
 }
-
-.btn-linkedin{
+.btn-linkedin {
   border-color: #0077B5;
   color: #0077B5;
 }
-
-.btn-linkedin:hover{
+.btn-linkedin:hover {
   background-color: #0077B5;
   color: white;
 }
-
-.btn-instagram{
+.btn-instagram {
   border-color: purple;
   color: purple;
 }
-
-.btn-instagram:hover{
+.btn-instagram:hover {
   background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
   color: white;
 }
-
-.btn-whatsapp{
+.btn-whatsapp {
   border-color: #25D366;
   color: #25D366;
 }
-
-.btn-whatsapp:hover{
+.btn-whatsapp:hover {
   background-color: #25D366;
   color: white;
 }
 
-@media screen and (min-width: 768px){
-  .contatos{
-    width: 768px;
+@media screen and (max-width: 767px) {
+  .redes-contato {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
   }
-}
 
-@media screen and (min-width: 1340px){
-  .contatos{
-    max-width: 1440px;
+  .btn {
     width: 100%;
+    max-width: 280px;
+  }
+
+  .contatos {
+    padding: 40px 16px;
   }
 }
