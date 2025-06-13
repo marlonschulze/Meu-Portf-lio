@@ -209,7 +209,7 @@ h1{
     background-color: transparent;
     box-shadow: none;
     position: relative;
-    top: 25px;
+    top: 0;
   }
 
   .navbar ul{
