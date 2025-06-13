@@ -6,6 +6,7 @@
 
 html{
   scroll-behavior: smooth;
+  max-width: 100vw;
 }
 
 body {
@@ -13,6 +14,7 @@ body {
   font-family: Arial, sans-serif;
   background: #f7f7f7;
   overflow-x: hidden;
+  max-width: 100vw;
 }
 
 ::-webkit-scrollbar{
@@ -35,11 +37,11 @@ body {
 
 header{
   position: fixed;
-  width: 100%;
+  width: 100vw;
   height: 80px;
   background: linear-gradient(270deg, #000000, #00bfff);
   background-size: 200% 400%;
-  top: -5px;
+  top: 0;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   z-index: 1000;
   animation: gradient 10s ease infinite;
@@ -77,17 +79,23 @@ h1{
 
 .menu-container {
   position: fixed;
+  top: 0;
+  right: 0;
+  padding: 20px 20px 0 0; 
   display: flex;
-  top: 1px;
-  right: 10px;
+  justify-content: flex-end;
+  z-index: 1001;
+  max-width: 100vw;
+  box-sizing: border-box;
 }
 
 .hamburger {
-  width: 30px;
+   width: 30px;
   height: 20px;
   position: relative;
   cursor: pointer;
-  margin: 20px;
+  margin-left: 20px;
+  padding: 10px 0;
   z-index: 10;
 }
 
