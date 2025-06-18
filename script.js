@@ -18,17 +18,20 @@ document.addEventListener('DOMContentLoaded', () => {
   // Máquina escrever
   const text = "Marlon Schulze";
   let i = 0;
+  const speed = 150;
+  const maquinaEscrever = document.getElementById('maquinaEscrever');
+
+  maquinaEscrever.textContent = ''; 
 
   function digitar() {
     if(i < text.length){
-      document.getElementById('maquinaEscrever').textContent += text.charAt(i);
+      maquinaEscrever.textContent += text.charAt(i);
       i++;
-      setTimeout(digitar, 150);
+      setTimeout(digitar, speed);
     }
   }
 
   digitar();
 });
-
 
 
