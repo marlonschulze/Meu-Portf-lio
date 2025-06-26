@@ -32,6 +32,17 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   digitar();
+
+  const btnVerMais = document.querySelectorAll('.ver-mais-btn');
+
+  btnVerMais.forEach((botao) => {
+    botao.addEventListener('click', () => {
+      const card = botao.closest('.card-pj');
+      card.classList.toggle('ativo');
+
+      botao.textContent = card.classList.contains('ativo') ? 'Ver menos' : 'Ver mais';
+    });
+  });
 });
 
 

@@ -291,7 +291,7 @@
   }
 
   .btns{
-    padding: 25px;
+    padding: 5px;
   }
 
   .btn-home{
@@ -372,7 +372,7 @@
     justify-content: center;
     flex: 1;
     margin: 0 auto;
-    width: 920vw;
+    width: 90vw;
     gap: 30px;
   }
 
@@ -565,6 +565,10 @@
     text-align: left;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    max-height: 150px; /* altura padrão do card fechado */
+    transition: height 0.4s ease;
   }
 
   .card-pj:hover{
@@ -590,7 +594,7 @@
 
   .btn-pj{
     display: inline-block;
-    padding: 10px 20px;
+    padding: 5px 8px;
     background-color: #008c75;
     color: #fff;
     text-decoration: none;
@@ -602,6 +606,44 @@
 
   .btn-pj:focus{
     background-color: #00bfff;
+  }
+
+  .ver-mais-btn{
+    background-color: #008c75;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+    border-radius: 6px;
+    padding: 2px 4px;
+  }
+
+  .ver-mais-btn:hover{
+    background-color: #008c75;
+    color: white;
+  }
+
+  .detalhes-pj {
+    opacity: 0;
+    transition: opacity 0.3s ease 0.2s;
+    margin-top: 10px;
+  }
+
+  .card-pj.ativo .detalhes-pj {
+    display: block;
+    opacity: 1;
+  }
+
+  .card-pj.ativo .btn-pj{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+  }
+
+  .card-pj.ativo{
+    max-height: 500px;
   }
 
   @media screen and (min-width: 768px){
