@@ -582,14 +582,22 @@
     color: #00bfff;
   }
 
-  .card-pj p{
+  .descricao-card-pj{
     font-size: 15px;
     color: #444;
-    margin-bottom: 10px;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+  }
+
+  .card-pj h5{
+    margin-top: 10px;
+  }
+
+  .tecnologias-usadas-card{
+    margin-bottom: 10px;
+    margin-top: 10px;
   }
 
   .btn-pj{
@@ -609,7 +617,7 @@
   }
 
   .ver-mais-btn{
-    background-color: #008c75;
+    background-color: #00bfff;
     color: white;
     cursor: pointer;
     font-size: 18px;
@@ -618,10 +626,13 @@
     transition: color 0.3s;
     border-radius: 6px;
     padding: 2px 4px;
+    align-items: center;
+    border: none;
+    margin-top: 10px;
   }
 
   .ver-mais-btn:hover{
-    background-color: #008c75;
+    background-color: #0077B5;
     color: white;
   }
 
@@ -643,7 +654,7 @@
   }
 
   .card-pj.ativo{
-    max-height: 500px;
+    max-height: 600px;
   }
 
   @media screen and (min-width: 768px){
